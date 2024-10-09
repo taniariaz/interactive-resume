@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)http://127.0.0.1:5500/milestone%201/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Interactive Resume</title>
+    <link rel="stylesheet" href="./Static Interactive Resume(tania riaz)_files/style.css">
+</head>
+<body>
+    <div class="resume-container">
+        <!-- Left Section -->
+        <div class="left-section">
+            <img src="./Static Interactive Resume(tania riaz)_files/profile.jpg" alt="Profile Picture" class="profile-picture">
+            <section id="objective">
+                <h3 style="color: white;">Career Objective</h3>
+                <p style="text-align: justify; hyphens: auto;">Aspiring computer engineer seeking to apply technical skills and knowledge in a dynamic environment to contribute to innovative projects and grow as a professional.</p>
+            </section>
+            <section id="certification">
+                <h3 style="color: white;">Certification</h3>
+                <p><b>GRAPHIC DESIGNING:</b> From UI Learning Institute</p>
+                <p><b>Project Management:</b> From Bahria University Karachi Campus</p>
+                <p><b>Arduino Programming Language:</b> From Bahria University Karachi Campus</p>
+                <p><b>Artificial Intelligence, Web 3.0 &amp; Metaverse:</b> From Governor House Karachi (On Going)</p>
+            </section>
+        </div>
+
+        <!-- Right Section -->
+        <div class="right-section">
+            <h1>Static Interactive Resume</h1>
+            <!-- Personal Information -->
+            <section id="personal-info">
+                <h3>Personal Information</h3>
+                <p><b>Name:</b> Tania Riaz</p>
+                <p><b>Father Name:</b> Muhammad Riaz</p>
+                <p><b>Contact NO:</b> 03172058625</p>
+                <p><b>Email:</b> <a href="mailto:Taniariaz2016@gmail.com">Taniariaz2016@gmail.com</a></p>
+                <p><b>LinkedIn:</b> <a href="https://www.linkedin.com/in/tania-riaz-b67020170" target="_blank">linkedin.com/in/tania-riaz-b67020170</a></p>
+            </section>
+
+            <!-- Education Section -->
+            <section id="education">
+                <h3>Education:</h3>
+                <p><b>Bachelors:</b> Computer Engineering from Bahria University Karachi Campus (2016-2020)</p>
+                <p><b>Intermediate:</b> Pre Engineering from Govt Degree College Malir Cantt Karachi (2014-2016)</p>
+                <p><b>Matriculation:</b> Science from Green House Grammar Secondary School (2012-2014)</p>
+            </section>
+
+            <!-- Skills Section -->
+            <section id="skills" style="display: block;">
+                <h3>Skills</h3>
+                <ul>
+                    <li>MS Office</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>TypeScript</li>
+                    <li>JavaScript</li>
+                    <li>MATLAB</li>
+                    <li>Arduino</li>
+                    <li>C++</li>
+                    <li>Graphic Designing</li>
+                    <li>Communication Skills</li>
+                </ul>
+            </section>
+
+            <!-- Work Experience -->
+            <section id="work-experience">
+                <h3>Work Experience</h3>
+                <p><b>Company Name:</b> Systems Ltd</p>
+                <p><b>Role:</b> MERN Stack Developer</p>
+            </section>
+
+            <!-- Button to toggle skills section -->
+            <button id="toggle-skills"><b>Hide/Show Skills</b></button>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('toggle-skills').addEventListener('click', function() {
+            const skillsSection = document.getElementById('skills');
+            if (skillsSection.style.display === 'none') {
+                skillsSection.style.display = 'block';
+            } else {
+                skillsSection.style.display = 'none';
+            }
+        });
+    </script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
